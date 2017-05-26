@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.silvaf.conversao.MainActivityConversao">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="244dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/legenda1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04"
+                android:text="Conversor de Temperatura"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@android:color/white">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/celsius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04"
+                android:text="Celcius"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.04"
+                android:background="@android:color/white">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04"
+                android:text="Fahrenheit"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.04"
+                android:background="@android:color/white">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/kelvin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04"
+                android:text="Kelvin"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="0.04">
+
+                <TextView
+                    android:id="@+id/legenda2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Ajuste a Temperatura"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.04"
+                android:max="100"
+                android:progress="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
